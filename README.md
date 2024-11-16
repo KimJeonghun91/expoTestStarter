@@ -4,7 +4,8 @@
 이 프로젝트는 EXPO에서 `jest`와 `appium`을 사용해 테스트를 시작할 수 있는 보일러플레이트입니다.
 유닛 테스트(Unit Test)와 엔드투엔드 테스트(E2E Test)를 설정하고 실행할 수 있습니다.
 
-https://github.com/user-attachments/assets/d4db73d8-8d03-444b-83c7-8435633fcc03
+https://github.com/user-attachments/assets/18479a64-6c24-452f-94ca-5b59cb53be2d
+
 
 ### 실제 환경에 맞게 변경 필요.
 
