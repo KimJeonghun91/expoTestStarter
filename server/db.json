@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "uuid": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "김정훈",
+      "userId": "kjh1234",
+      "userPw": "sfjAelskdf@lsd"
+    },
+    {
+      "uuid": "67d03a33-7b22-4fd8-9d31-8a4648bb32a6",
+      "name": "홍길동",
+      "userId": "redwayeast",
+      "userPw": "bm!@vsdDFjj"
+    },
+    {
+      "uuid": "a385bcd6-c902-4251-af14-2c7c5c27348c",
+      "name": "이철수",
+      "userId": "twoironnumber",
+      "userPw": "63kliz%Klsv2"
+    }
+  ]
+}
