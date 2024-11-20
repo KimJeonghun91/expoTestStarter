@@ -1,6 +1,6 @@
-import { AC_LABELS } from "@/constants/AccessibilityLabels";
 import { ERROR_MSG } from "@/constants/msg";
 import { advanceScreenHelper } from "../helper/screen/AdvanceScreenHelper";
+import { gestureUtils } from "../helper/GestureUtils";
 
 describe('AdvanceScreen', () => {
   beforeEach(async () => {
@@ -9,6 +9,12 @@ describe('AdvanceScreen', () => {
   });
 
   it('사용자 ID 또는 비밀번호가 비어있을 때 로그인 시 에러 메시지를 표시해야 합니다', async () => {
+
+    // 가려진 input창을 찾기 위해 스크롤
+    await browser.pause(1000);
+    await gestureUtils.swipe({ direction: 'up', distanceLevel: 5 });
+    await browser.pause(1000);
+
     // ID와 비밀번호 모두가 비어있는 경우
     await advanceScreenHelper.performLogin('', '');
     await advanceScreenHelper.verifyLoginErrorMessage(ERROR_MSG.REQUIRED_ID_AND_PASSWORD);

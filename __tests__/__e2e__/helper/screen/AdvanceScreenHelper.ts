@@ -1,7 +1,7 @@
 import { AC_LABELS } from "@/constants/AccessibilityLabels";
-import VerifyHelper from "../VerifyHelper";
+import VerifyUtils from "../VerifyUtils";
 
-class AdvanceScreenHelper extends VerifyHelper {
+class AdvanceScreenHelper extends VerifyUtils {
   public async performLogin(id: string, password: string) {
     await this.setElementValue({ selector: AC_LABELS.ADVANCE_INPUT_USER_ID, value: id });
     await this.setElementValue({ selector: AC_LABELS.ADVANCE_INPUT_USER_PW, value: password });
